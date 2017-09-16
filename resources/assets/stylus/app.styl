@@ -1,0 +1,286 @@
+ @import "bootstrap"
+ @media (min-width: 992px) {
+  .usersOnline {
+    width: 500px;
+    right: 0;
+  }
+}
+.logo {
+  padding: 0;
+  padding-left: 15px;
+  z-index: 1001;
+}
+.navbar-static-top {
+  border: 0 !important;
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 7vh;
+}
+html,
+body {
+  background-color: #fff !important;
+  height: 100%;
+  padding-top: 9vh;
+}
+.navbar-default {
+  background: #050f31 !important;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form,
+.navbar-default {
+  border: none !important;
+  background: #050f3e;
+  z-index: 1000;
+}
+.messenger {
+  margin-bottom: 8vh;
+}
+.navbar-default .navbar-nav > li > a {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #e91e63;
+  height: 7vh;
+  line-height: 3.8vh;
+}
+.logo div svg {
+  z-index: 1001;
+}
+#messageForm {
+  height: 7vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1001;
+  left: 0;
+}
+.main-message {
+  border-radius: 0 !important;
+  border: 0 !important;
+  background-color: #050f3e !important;
+  height: 100% !important;
+  width: 90% !important;
+  font-size: 1.8rem !important;
+  font-weight: 500;
+  padding-left: 15px !important;
+  resize: none;
+  display: inline !important;
+  color: #ae113e;
+  z-index: 1001;
+}
+.send-main {
+  border: none;
+  background: #050f31;
+  font-weight: 700;
+  height: 100% !important;
+  width: 10% !important;
+  position: absolute;
+  color: #e91e63;
+}
+* {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.navbar-toggle {
+  height: 5vh;
+  border: none;
+}
+.transmission {
+  margin: 0 !important;
+  background-color: #e51c79;
+  padding: 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  color: #fff;
+}
+.user_post {
+  margin-left: 29px;
+  transition: margin-left 1s ease, margin-top 1s ease;
+  margin-top: 12px;
+  font-size: 20px;
+  height: 50px;
+}
+.usersOnline h6 {
+  font-weight: 600 !important;
+  font-family: roboto;
+}
+.avatar {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  border-radius: 45px;
+  background-size: cover;
+  margin-top: 0;
+  background-color: #000;
+/* Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s, margin-top 0.5s;
+  top: 39px;
+  background-image: url("https://cdn.shopify.com/s/files/1/0843/2781/products/RapMask_Mark-Zuckerberg_Excited_9Width_Standard_grande.png");
+}
+.user_data {
+  position: relative;
+  top: -17px;
+  height: 50px;
+}
+.user_data:hover {
+  cursor: pointer;
+  display: block;
+  top: -23px;
+}
+.user_data:hover > .avatar {
+  width: 50px;
+  height: 50px;
+/* Safari 3.1 to 6.0 */
+  transition: width 0.5s, height 0.5s, margin-top 0.5s;
+/* Safari 3.1 to 6.0 */
+  cursor: pointer;
+}
+.user_data:hover > .user_post {
+  margin-left: 54px;
+  transition: margin-left 0.4s ease;
+  font-size: 20px;
+  margin-top: -13px;
+  transition: margin-left 0.4s ease, margin-top 0.4s ease;
+  height: 51px;
+}
+#users {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.secondary_data {
+  opacity: 0;
+  transition: opacity 1s ease;
+  margin-left: 8px;
+  display: block;
+  position: relative;
+  top: -22px;
+}
+.user_data:hover > .secondary_data {
+  transition: opacity 0.4s ease;
+  opacity: 1;
+}
+.secondary_data ul li {
+  display: inline;
+  margin: 5px;
+  background-color: #e4e4e4;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.single_message {
+  animation-duration: 0.6s;
+  animation-name: popin;
+}
+#chat {
+  height: 70vh;
+  overflow-y: scroll;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #e91e63 !important;
+}
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: transparxent !important;
+}
+#messageArea {
+  margin-top: 0vh;
+}
+.list-group-item {
+  width: 150px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffde5b;
+  font-weight: 700;
+  height: 40px;
+  padding-left: 45px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+}
+.list-group-item .avatar {
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 0px;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-top-left-radius: 3px;
+  background-size: cover;
+  border-bottom-left-radius: 3px;
+}
+.user_is_online {
+  margin: 1.44444%;
+  width: 30.44444%;
+}
+/*# sourceMappingURL=app.css.map */
+@-moz-keyframes popin {
+  10% {
+    background-color: #fff;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  50% {
+    background-color: #050f3e !important;
+    opacity: 0.2;
+    margin-top: 20px;
+  }
+  100% {
+    background-color: #050f3e !important;
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@-webkit-keyframes popin {
+  10% {
+    background-color: #fff;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  50% {
+    background-color: #050f3e !important;
+    opacity: 0.2;
+    margin-top: 20px;
+  }
+  100% {
+    background-color: #050f3e !important;
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@-o-keyframes popin {
+  10% {
+    background-color: #fff;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  50% {
+    background-color: #050f3e !important;
+    opacity: 0.2;
+    margin-top: 20px;
+  }
+  100% {
+    background-color: #050f3e !important;
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+@keyframes popin {
+  10% {
+    background-color: #fff;
+    opacity: 0;
+    margin-top: 0px;
+  }
+  50% {
+    background-color: #050f3e !important;
+    opacity: 0.2;
+    margin-top: 20px;
+  }
+  100% {
+    background-color: #050f3e !important;
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
